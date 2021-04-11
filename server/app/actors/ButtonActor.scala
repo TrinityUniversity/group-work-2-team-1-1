@@ -11,56 +11,6 @@ class ButtonActor(out: ActorRef) extends Actor {
             out ! "clicked"
         case m => println("Unhandled message in ButtonActor: " + m)
     }
-
-    
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
-}
-
-object ButtonActor {
-    def props(out: ActorRef) = Props(new ButtonActor(out))
 }
 
 object ButtonActor {
