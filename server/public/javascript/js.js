@@ -14,8 +14,11 @@ const buttonIn = document.getElementById("websocket_button");
 const socketRoute = document.getElementById("ws-route").value;
 const socket = new WebSocket(socketRoute.replace("http","ws"));
 
+init()
+
 buttonIn.onclick = (event) => {
     socket.send("click");
+    init()
 }
 
 socket.onmessage = (event) => {

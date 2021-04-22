@@ -17,6 +17,7 @@ class Application @Inject()(cc: ControllerComponents) extends AbstractController
     Ok(views.html.counter())
   }
 
+
   def getCount = Action { implicit request =>
     Ok(counterModel.getCount.toString)
   }
