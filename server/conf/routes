@@ -8,6 +8,8 @@ GET        /count                        controllers.Application.getCount
 GET        /increment                    controllers.Application.count
 GET        /socket                       controllers.WebSocketCount.socket
 GET        /index                        controllers.WebSocketCount.index
+POST       /oneMessageAJAX               controllers.Application.receiveMessage
+
 
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
