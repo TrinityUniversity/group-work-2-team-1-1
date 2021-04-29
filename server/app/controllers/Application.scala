@@ -20,8 +20,6 @@ import models.OneMessageModel
 class Application @Inject() (cc: ControllerComponents)
     extends AbstractController(cc) {
 
-    implicit val oneMessageReads = Json.reads[OneMessage]
-    implicit val oneMessageWrites = Json.writes[OneMessage]   
   def index = Action {
     Ok("")
   }
@@ -52,12 +50,5 @@ class Application @Inject() (cc: ControllerComponents)
         }
       }
       .getOrElse(Future.successful(Redirect(routes.Application.mainPage())))
-  }
-
-  def receiveMessage = Action.async { implicit request =>
-    withJsonBody[OneMessage] { ud =>
-      val om = OneMessageModel.storeMessage(ud)
-      Future.successful(Ok(Json.toJson(om)))
-    }
   }
 }

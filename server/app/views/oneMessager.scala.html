@@ -2,9 +2,9 @@
 
 
 @main("title"){
-    <div id="message"></div>
+    <input type="hidden" id="messageRoute" value="@routes.MessageController.addMessage()">
     <input id="inputField" type="text"></input>
     <input id="authorField" type="text"></input>
     <button id="button">Send Message</button>  
-    <div id="content"></div>
+    <div id="message"></div>
 }
